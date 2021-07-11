@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro EloGroup</title>
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+</head>
+<body>
+    <img src="elogroup.png" style="width: 300px; padding: 15px;">
+   <div class="container">
+        <div class="div-formulario">
+            
+            <div class="titulo"><h1>Registro EloGroup</h1></div>
+            <form class="formulario-registro">
+                <div class="input-div">
+                    <input type="text" value="" class="input-espaco" id="usuario" placeholder="Digite seu usuário*"><br>
+                    <div id="user" class="alert"></div>
+                </div>
+                <div class="input-div">
+                    <input type="password" value="" class="input-espaco" id="senha" placeholder="Digite sua senha*"><br>
+                    <div id="password1" class="alert"></div>
+                </div>
+                <div class="input-div">
+                    <input type="password" value="" class="input-espaco" id="conf-senha" placeholder="Confirme sua senha*"><br>
+                    <div id="password2" class="alert"></div>
+                    <div id="contaCriada" class="alert2"></div>
+                </div>
+                <div class="input-div btn1">
+                    <input type="button" value="Registrar" class="btn-registrar" id="registrar" onclick="criarRegistro()">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

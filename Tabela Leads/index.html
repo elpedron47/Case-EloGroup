@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela de Leads</title>
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+    
+    <script src="app.js"></script>
+</head>
+<body onload="carregarLeads()">
+    <img src="elogroup.png" style="width: 300px; padding: 15px;">
+    <main>
+        <div class="div-1">
+            <button type="button" class="btn-lead" onclick="openModal()">Novo Lead (+)
+            </button>
+            <div class="div-tabela">
+                <table class="tabela">
+                    <tr class="titulo">
+                        <th class="tabela-1">Cliente em Potencial</th>
+                        <th class="tabela-1">Dados Confirmados</th>
+                        <th class="tabela-1">Reunião Agendada</th>
+                    </tr>
+                </table>
+            </div>
+            <div><br><br><br><br></div>
+        </div>
+    </main>
+    <div class="jw-modal-wrapper" id="modal-1">
+        <div class="jw-modal">
+            <div class="jw-modal-body">
+                <div class="div-modal">
+                    <div class="div-modal-1">
+                        <form>
+                            <img src="elogroup2.png" style="width: 300px; padding: 15px;">
+                            <input type="text" placeholder="Nome*" class="input-inf" id="nome"><br>
+                            <input type="text" placeholder="Telefone*" class="input-inf" id="telefone"><br>
+                            <input type="email" placeholder="Email*" class="input-inf" id="email"><br>
+                            <div class="alerta"></div>
+                            <div class="alerta2"></div>
+                        </form>
+                    </div>
+                    <div class="div-modal-2">
+                        <table class="tabela-leads">
+                            <tr style="background-color: rgb(158, 158, 158);">
+                                <th class="check-th">
+                                    <input type="checkbox" class="check-all" onclick="marcarTodos(this)">
+                                </th>
+                                <th>
+                                    
+                                </th>
+                            </tr>
+                            <tr>
+                                <th class="check-th">
+                                    <input type="checkbox" class="check" id="rpa">
+                                </th>
+                                <td>
+                                    RPA
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="check-th"> 
+                                    <input type="checkbox" class="check" id="produto-digital">
+                                </th>
+                                <td>
+                                    Produto Digital
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="check-th">
+                                    <input type="checkbox" class="check" id="analytics">
+                                </th>
+                                <td>
+                                    Analytics
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="check-th">
+                                    <input type="checkbox" class="check" id="bpm">
+                                </th>
+                                <td>
+                                    BPM
+                                </td>
+                            </tr>
+                           
+                        </table>
+
+                        <button onclick="adicionarLead()" class="btn-salvar">Salvar</button>
+                        <button onclick="closeModal()" class="btn-fechar">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="jw-modal-background"></div>
+    </div>
+</body>
+</html>

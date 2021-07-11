@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #1d242d;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+}
+
+.div-formulario {
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 350px;
+    height: 450px;
+    margin: 0 auto;
+    background-color: white;
+}
+
+.container {
+    padding-top: 200px;
+}
+
+.titulo {
+    text-align: center;
+    padding-top: 25px;
+}
+
+form {
+    padding-left: 5rem;
+    padding-top: 15px;
+}
+
+input.input-espaco{
+    width: 200px;
+    height: 25px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgb(182, 182, 182);
+}
+
+input:focus{
+    border-bottom: 1px solid rgb(43, 43, 43);
+}
+
+.btn-registrar {
+    width: 200px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-registrar:hover{
+    background: rgb(201,201,201);
+    transition: 0.4s;
+}
+
+.btn-registrar:focus {
+    border: none;
+}
+
+
+.input-div{
+    padding-top: 40px;
+}
+
+/* HOVER INPUTS */
+
+#usuario:hover {
+    border-bottom: 1px solid rgb(43, 43, 43);
+    transition: 0.7s;
+}
+
+#senha:hover {
+    border-bottom: 1px solid rgb(43, 43, 43);
+    transition: 0.7s;
+}
+
+#conf-senha:hover {
+    border-bottom: 1px solid rgb(43, 43, 43);
+    transition: 0.7s;
+}
+
+.alert {
+    color: red;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    width: 200px;
+}
+
+.alert2 {
+    color: rgb(27, 136, 0);
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    width: 200px;
+    text-align: center;
+    margin-top: 25px;
+}

@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: #1d242d !important; 
+}
+
+main {
+    padding-top: 100px;
+}
+
+.div-1 {
+    width: 675px;
+    height: 400px;
+    margin: 0 auto;
+}
+
+.div-tabela {
+    width: 100%;
+    background-color: white;
+}
+
+table, th, td {
+    border: 1px solid #dddddd;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+th {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+td {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 13px;
+    text-align: center;
+}
+
+.titulo {
+    background-color: #c2c2c2;
+}
+
+.tabela-1 {
+    padding: 35px 45px 35px 45px;
+    color: rgb(0, 0, 0);
+}
+
+tr:nth-child(even) {
+    background-color: #e6e4e4;
+}
+
+.btn-lead {
+    height: 60px;
+    width: 190px;
+    font-size: 18px;
+    font-family: 'Noto Sans JP', sans-serif;
+    margin-bottom: 6px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background-color: rgb(0, 140, 255);
+    color: white;
+    cursor: pointer;
+}
+
+.btn-lead:hover {
+    background-color: rgb(55, 163, 251);
+    transition: 0.3s;
+}
+
+.jw-modal {
+    
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    overflow: auto;
+}
+
+.jw-modal-body {
+    padding: 20px;
+    background: #fff;
+    margin: 100px auto;
+    max-width: 892px;
+}
+
+.jw-modal-background {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    opacity: 0.75;
+    z-index: 900;
+}
+
+body.jw-modal-open {
+    overflow: hidden;
+}
+
+.jw-modal-wrapper {
+    display: none;
+}
+
+.div-modal {
+    width: 100%;
+    display: inline-flex;
+}
+
+.div-modal-1 {
+    width: 50%;
+    text-align: center;
+}
+
+.div-modal-2 {
+    width: 50%;
+    margin-top: 50px;
+}
+
+.input-inf {
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    width: 250px;
+    height: 40px;
+    margin: 25px 0 25px 0;
+}
+
+.tabela-leads,td {
+    width: 380px;
+}
+
+.check-th {
+    width: 65px;
+}
+
+.btn-salvar {
+    width: 380px;
+    height: 45px;
+    margin-left: 33px;
+    margin-top: 45px;
+    border: none;
+    background-color: rgb(0, 140, 255);
+    color: white;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.btn-fechar {
+    width: 380px;
+    height: 45px;
+    margin-left: 33px;
+    margin-top: 22px;
+    border: none;
+    background-color: rgb(0, 140, 255);
+    color: white;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 15px; 
+    cursor: pointer;
+}
+
+.alerta {
+    font-family: 'Noto Sans JP', sans-serif;
+    color: rgb(255, 56, 56);
+}
+
+.alerta2 {
+    font-family: 'Noto Sans JP', sans-serif;
+    color: rgb(58, 155, 20);
+}
